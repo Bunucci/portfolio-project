@@ -1,1 +1,2 @@
 # portfolio-project
+Project DEscription: Portfolio project showcases my profile, previous projects, articles as well as how to contact me. The navigation bar - projects is linked to my week 1 project on the bootcamp program.
