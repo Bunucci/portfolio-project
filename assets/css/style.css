@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+  
+}
+
+#heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 80vh;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+    "projects articles"
+    "projects contactme";
+    
+  }
+  
+  #projects {
+    grid-area: projects;
+    background-image: url("../images/aboutme.jpg");
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #articles {
+    grid-area: articles;
+    background-image: url("../images/articles.jpg");
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #contactme {
+    grid-area: contactme;
+    background-image: url("../images/contactme.jpg");
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+    
+  }
+ 
+  #Aboutme h2 {
+    color: brown;
+    padding: 25px;
+    text-decoration: underline;
+
+  }
+
+  #Aboutme p {
+    color: brown;
+    align-items: center;
+    padding: 25px;
+    margin-top: -15px;
+
+  }
+
+  #logo {
+    display: flex-end;
+    flex-direction: row;
+    padding: 25px;
+    color: brown;
+    font-size: large;
+    
+  }
+
+  #navigation {
+    display: flex;
+   flex-direction: row;
+   float: right;
+   margin: -70px 10%;
+   justify-content: space-between;
+   color: brown;
+   
+  }
+
+  #navigation li {
+    cursor: pointer;
+    color: brown;
+    text-align: center;
+  }
+
+  #navigation ul {
+    display: flex;
+  
+  }
+
+  #footer {
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    #navigation {
+      display: none;
+      margin-left: auto;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    #heroGrid {
+      grid-template-areas: 
+      "projects projects"
+      "articles contactme"
+      ;
+    }
+  }
+  
+ 
